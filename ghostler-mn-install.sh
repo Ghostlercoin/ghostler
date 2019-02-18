@@ -38,11 +38,11 @@ then
   sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
   cd
 
-  wget https://github.com/ghostler/ghostler/releases/download/v1.0.0/Linux.zip
-  unzip Linux.zip
-  chmod +x Linux/bin/*
-  sudo mv  Linux/bin/* /usr/local/bin
-  rm -rf Linux.zip Windows Linux Mac
+  wget https://github.com/ghostler/ghostler/releases/download/v1.0.0/Linux-release.zip
+  unzip Linux-release.zip
+  chmod +x Linux-release/bin/*
+  sudo mv  Linux-release/bin/* /usr/local/bin
+  rm -rf Linux-release.zip Windows Linux Mac
 
   sudo apt-get install -y ufw
   sudo ufw allow ssh/tcp
